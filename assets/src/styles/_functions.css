@@ -1,0 +1,50 @@
+.function {
+  position: absolute;
+  transform: translate(-50%);
+  cursor: pointer;
+  padding: 0;
+  background: transparent;
+  border: none;
+  color: #ff6b4f;
+  z-index: 100;
+  transition: all 0.2s ease;
+}
+
+.function:active {
+  transform: translate(-50%) scale(0.9);
+}
+
+#play {
+  left: 50%;
+  top: 65%;
+  font-size: 2rem;
+}
+
+#mail {
+  left: 50%;
+  top: 78%;
+  font-size: 3rem;
+}
+
+#sound {
+  bottom: 4vh;
+  right: 5vw;
+  font-size: 2rem;
+}
+
+.swiper {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;
+}
+
+.swiper-slide {
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  width: calc(var(--index) * 20);
+  height: calc(var(--index) * 20);
+  object-fit: cover;
+}
