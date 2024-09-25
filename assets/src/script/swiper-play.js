@@ -1,5 +1,5 @@
 import Swiper from "./swiper/swiper";
-import { Autoplay } from "./swiper/types/modules/index";
+import Autoplay from "./swiper/modules/autoplay.mjs";
 
 const play = document.body.querySelector("#play");
 const play_icon = document.body.querySelector(".bx-pause-circle");
