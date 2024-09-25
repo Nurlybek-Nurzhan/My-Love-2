@@ -1,3 +1,5 @@
+import { modal, mail_icon } from "./mail.js";
+
 const bgHeart = document.querySelector("#bg_heart");
 
 function explodeHearts(x, y) {
@@ -20,4 +22,10 @@ function explodeHearts(x, y) {
 document.body.addEventListener("click", (event) => {
   const { clientX: x, clientY: y } = event;
   explodeHearts(x, y);
+
+  if (modal.classList.contains("open") && event.target === modal) {
+    modal.classList.remove("open");
+    mail_icon.classList.remove("bx-envelope-open");
+    mail_icon.classList.add("bx-envelope");
+  }
 });

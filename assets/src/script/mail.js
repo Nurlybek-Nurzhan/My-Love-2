@@ -1,9 +1,9 @@
 const mail = document.body.querySelector("#mail");
-const mail_icon = document.body.querySelector(".bx-envelope");
+export const mail_icon = document.body.querySelector(".bx-envelope");
+export const modal = document.getElementById("modal");
 
 mail.addEventListener("click", () => {
-  mail_icon.classList.toggle("bx-envelope");
-  mail_icon.classList.toggle("bx-envelope-open");
-
-  let cutie = document.body.querySelectorAll(".swiper-slide")[0];
+  mail_icon.classList.remove("bx-envelope");
+  mail_icon.classList.add("bx-envelope-open");
+  modal.classList.add("open");
 });

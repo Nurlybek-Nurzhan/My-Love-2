@@ -6,12 +6,17 @@
   background: transparent;
   border: none;
   color: #ff6b4f;
-  z-index: 100;
+  z-index: 2;
   transition: all 0.2s ease;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .function:active {
   transform: translate(-50%) scale(0.9);
+}
+
+.function:focus {
+  outline: none;
 }
 
 #play {
@@ -32,8 +37,9 @@
   font-size: 2rem;
 }
 
-.swiper {
-  box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;
+.swiper-wrapper {
+  display: flex;
+  align-items: center;
 }
 
 .swiper-slide {
@@ -47,4 +53,63 @@
   width: calc(var(--index) * 20);
   height: calc(var(--index) * 20);
   object-fit: cover;
+}
+
+.modal {
+  opacity: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transition: all 0.3s ease-in-out;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal.open {
+  opacity: 1;
+  z-index: 3;
+}
+
+.modal-frame {
+  box-shadow: none;
+}
+
+.modal-inner {
+  background: rgba(0, 0, 0, 0.3);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 12px;
+  padding: 16px 24px;
+  text-align: center;
+  width: 380px;
+}
+
+.modal-inner img {
+  width: 80%;
+  height: auto;
+  border-radius: 12px;
+  margin-top: 16px;
+}
+
+.modal-inner h2 {
+  margin-top: 24px;
+  font-family: raleway_c;
+  font-weight: 900;
+  font-size: 28px;
+  line-height: 36px;
+}
+
+.modal-inner p {
+  font-family: raleway_c;
+  font-weight: 100;
+  font-size: 20px;
+  line-height: 24px;
+  margin: 16px;
+  font-weight: 600;
 }
