@@ -1,4 +1,4 @@
-import Swiper from "swiper";
+import Swiper from "./swiper/swiper";
 import { Autoplay } from "swiper/modules";
 
 const play = document.body.querySelector("#play");
