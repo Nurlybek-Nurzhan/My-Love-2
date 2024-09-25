@@ -1006,7 +1006,7 @@ particlesJS("particles-js", {
     shape: {
       type: "image",
       image: {
-        src: "./assets/public/images/heart.png",
+        src: "/assets/heart.png",
         width: 100,
         height: 100,
       },
