@@ -1,5 +1,6 @@
 @import url("./_reset.css");
 @import url("../script/swiper/swiper.min.css");
+@import url("../script/swiper/modules/effect-fade.css");
 @import url("https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css");
 @import url("./_main.css");
 @import url("./_background.css");

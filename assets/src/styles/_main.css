@@ -1,5 +1,11 @@
 :root {
   --index: calc(1vw + 1vh);
+  --gutter: 30px;
+  --side-small: 26;
+  --side-big: 36;
+  --side-giga-big: 50;
+  --depth: 29800px;
+  --transition: 0.75s cubic-bezier(0.075, 0.5, 0, 1);
 }
 
 @font-face {
@@ -33,4 +39,52 @@ body {
   width: 100%;
   height: 100svh;
   box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;
+}
+
+.dark {
+  background: #000;
+  height: max-content;
+}
+
+html.lenis,
+html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-smooth iframe {
+  pointer-events: none;
+}
+
+.frame-media {
+  position: relative;
+  height: 33svh;
+  background-position: center;
+  background-size: cover;
+}
+
+video.frame-media {
+  width: max-content;
+  height: 33svh;
+  border: 2px solid #ffdad9;
+  border-radius: 50%;
+}
+
+video.frame-media_right {
+  left: 29%;
+}
+
+video.frame-media_left {
+  right: 0;
 }
