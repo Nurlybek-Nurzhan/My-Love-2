@@ -7,3 +7,11 @@ mail.addEventListener("click", () => {
   mail_icon.classList.add("bx-envelope-open");
   modal.classList.add("open");
 });
+
+document.body.addEventListener("click", (event) => {
+  if (modal.classList.contains("open") && event.target != mail && event.target != mail_icon) {
+    modal.classList.remove("open");
+    mail_icon.classList.remove("bx-envelope-open");
+    mail_icon.classList.add("bx-envelope");
+  }
+});
