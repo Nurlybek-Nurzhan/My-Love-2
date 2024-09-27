@@ -1566,7 +1566,73 @@ window.particlesJS.load = function (tag_id, path_config_json, callback) {
 particlesJS("particles-js", {
   particles: {
     number: {
-      value: 50,
+      value: 150,
+      density: {
+        enable: true,
+        value_area: 800,
+      },
+    },
+    color: {
+      value: "#fff800",
+    },
+    shape: {
+      type: "circle",
+      stroke: {
+        width: 1,
+        color: "#fff800",
+      },
+      polygon: {
+        nb_sides: 5,
+      },
+    },
+    opacity: {
+      value: 0.5,
+      random: false,
+      anim: {
+        enable: false,
+        speed: 1,
+        opacity_min: 0.1,
+        sync: false,
+      },
+    },
+    size: {
+      value: 1,
+      random: true,
+      anim: {
+        enable: false,
+        speed: 40,
+        size_min: 0.5,
+        sync: false,
+      },
+    },
+    line_linked: {
+      enable: true,
+      distance: 150,
+      color: "#ffdad9",
+      opacity: 0.4,
+      width: 1,
+    },
+    move: {
+      enable: true,
+      speed: 6,
+      direction: "none",
+      random: false,
+      straight: false,
+      out_mode: "out",
+      bounce: false,
+      attract: {
+        enable: false,
+        rotateX: 600,
+        rotateY: 1200,
+      },
+    },
+  },
+});
+
+particlesJS("particles-js_second", {
+  particles: {
+    number: {
+      value: 200,
       density: {
         enable: false,
         value_area: 800,
@@ -1607,6 +1673,118 @@ particlesJS("particles-js", {
       enable: true,
       speed: 6,
       direction: "none",
+      random: false,
+      straight: false,
+      out_mode: "out",
+      attract: {
+        enable: false,
+        rotateX: 600,
+        rotateY: 1200,
+      },
+    },
+  },
+});
+
+particlesJS("particles-js_third", {
+  particles: {
+    number: {
+      value: 100,
+      density: {
+        enable: false,
+        value_area: 800,
+      },
+    },
+    shape: {
+      type: "image",
+      image: {
+        src: "./assets/public/images/heart.png",
+        width: 100,
+        height: 100,
+      },
+    },
+    size: {
+      value: 30,
+      random: true,
+      anim: {
+        enable: false,
+        speed: 30,
+        size_min: 30,
+        sync: false,
+      },
+    },
+    line_linked: {
+      enable: false,
+    },
+    opacity: {
+      value: 0.5,
+      random: false,
+      anim: {
+        enable: false,
+        speed: 1,
+        opacity_min: 0.1,
+        sync: false,
+      },
+    },
+    move: {
+      enable: true,
+      speed: 6,
+      direction: "bottom",
+      random: false,
+      straight: false,
+      out_mode: "out",
+      attract: {
+        enable: false,
+        rotateX: 600,
+        rotateY: 1200,
+      },
+    },
+  },
+});
+
+particlesJS("particles-js_fourth", {
+  particles: {
+    number: {
+      value: 100,
+      density: {
+        enable: false,
+        value_area: 800,
+      },
+    },
+    shape: {
+      type: "image",
+      image: {
+        src: "./assets/public/images/heart-border.png",
+        width: 100,
+        height: 100,
+      },
+    },
+    size: {
+      value: 30,
+      random: true,
+      anim: {
+        enable: false,
+        speed: 30,
+        size_min: 30,
+        sync: false,
+      },
+    },
+    line_linked: {
+      enable: false,
+    },
+    opacity: {
+      value: 0.5,
+      random: false,
+      anim: {
+        enable: false,
+        speed: 1,
+        opacity_min: 0.1,
+        sync: false,
+      },
+    },
+    move: {
+      enable: true,
+      speed: 6,
+      direction: "top",
       random: false,
       straight: false,
       out_mode: "out",

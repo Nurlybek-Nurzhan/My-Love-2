@@ -24,6 +24,7 @@ html,
 body {
   position: relative;
   height: 100%;
+  overflow: hidden;
 }
 
 body {
@@ -33,17 +34,6 @@ body {
   color: #000;
   margin: 0;
   padding: 0;
-}
-
-.frame {
-  width: 100%;
-  height: 100svh;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;
-}
-
-.dark {
-  background: #000;
-  height: max-content;
 }
 
 html.lenis,
@@ -67,6 +57,40 @@ html.lenis body {
   pointer-events: none;
 }
 
+.frame {
+  width: 100%;
+  height: 100svh;
+}
+
+.dark {
+  background-color: #000;
+  height: 100svh;
+  box-shadow: rgba(255, 218, 217, 0.35) 0px -50px 36px -28px inset;
+}
+
+.second {
+  height: 475svh;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;
+}
+
+.third {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20svh;
+  padding: 10svh 0;
+  background: #ffdad9;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;
+  height: 240svh;
+}
+
+.fourth {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .frame-media {
   position: relative;
   height: 33svh;
@@ -74,17 +98,71 @@ html.lenis body {
   background-size: cover;
 }
 
-video.frame-media {
+.second video {
   width: max-content;
   height: 33svh;
-  border: 2px solid #ffdad9;
+  border: none;
   border-radius: 50%;
+  z-index: 1;
+  box-shadow: 0 0 20px #000000;
 }
 
-video.frame-media_right {
+.second video.frame-media_right {
   left: 29%;
 }
 
-video.frame-media_left {
+.second video.frame-media_left {
   right: 0;
+}
+
+.third img {
+  width: calc(var(--index) * 20);
+  height: calc(var(--index) * 20);
+  object-fit: cover;
+  filter: drop-shadow(0 0 4px #000);
+  z-index: 1;
+}
+
+.third img:last-child {
+  filter: none;
+}
+
+.fourth img {
+  width: calc(var(--index) * 20);
+  height: calc(var(--index) * 20);
+  object-fit: cover;
+  filter: drop-shadow(0 0 4px #000000);
+  z-index: 1;
+}
+
+.love {
+  animation: heart 1.5s ease 0s infinite normal none;
+}
+
+@keyframes heart {
+  0% {
+    animation-timing-function: ease-out;
+    transform: scale(1);
+    transform-origin: center center;
+  }
+
+  10% {
+    animation-timing-function: ease-in;
+    transform: scale(0.91);
+  }
+
+  17% {
+    animation-timing-function: ease-out;
+    transform: scale(0.98);
+  }
+
+  33% {
+    animation-timing-function: ease-in;
+    transform: scale(0.87);
+  }
+
+  45% {
+    animation-timing-function: ease-out;
+    transform: scale(1.2);
+  }
 }
