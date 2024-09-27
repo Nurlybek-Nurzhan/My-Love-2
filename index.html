@@ -6,19 +6,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Щеночек~)</title>
 
-  <link rel="stylesheet" href="./assets/src/styles/index.css" />
+  <link rel="stylesheet" href="./assets/src/styles/all.css" />
   <script type="module" src="./assets/src/script/index.js"></script>
   <!-- <script type="module" src="./assets/src/script/lib.js"></script>
-  <script type="module" src="./assets/src/script/swiper-play.js"></script>
-  <script type="module" src="./assets/src/script/mail.js"></script>
-  <script type="module" src="./assets/src/script/audio.js"></script>
+  <script type="module" src="./assets/src/script/typing.js"></script>
   <script type="module" src="./assets/src/script/particles.js"></script>
-  <script type="module" src="./assets/src/script/hearts.js"></script>
-  <script type="module" src="./assets/src/script/scroll.js"></script> -->
+  <script type="module" src="./assets/src/script/scroll.js"></script>
+  <script type="module" src="./assets/src/script/audio.js"></script>
+  <script type="module" src="./assets/src/script/swiper-play.js"></script>
+  <script type="module" src="./assets/src/script/mail.js"></script> -->
 </head>
 
 <body>
-  <div id="bg_heart"></div>
   <div id="particles-js"></div>
   <div id="particles-js_second"></div>
   <div id="particles-js_third"></div>
@@ -140,14 +139,27 @@
           </div>
         </div>
       </div>
-      <h2>Cool tutorial!</h2>
-      <p>
-        Do you like these kind of fast coding tutorials? Let me know in the
-        comments section below.
-      </p>
+      <h2 class="modal-title"></h2>
+      <p class="modal-text">Как же я тебя люблю~)</p>
     </div>
   </div>
-  <div class="frame dark"></div>
+  <div class="frame dark center">
+    <h1 class="frame-title">Мицель <b>Мария</b> Рустамовна</h1>
+    <p class="frame-subtitle">от твоего <b>кота | коти | котёнка</b></p>
+    <div class="swiper swiper-puppies">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img class="puppy" src="./assets/public/images/puppy.png" alt=""></div>
+        <div class="swiper-slide"><img class="puppy" src="./assets/public/images/puppy-1.png" alt=""></div>
+        <div class="swiper-slide"><img class="puppy" src="./assets/public/images/puppy-2.png" alt=""></div>
+        <div class="swiper-slide"><img class="puppy" src="./assets/public/images/puppy-3.png" alt=""></div>
+        <div class="swiper-slide"><img class="puppy" src="./assets/public/images/puppy-4.png" alt=""></div>
+        <div class="swiper-slide"><img class="puppy" src="./assets/public/images/puppy-5.png" alt=""></div>
+        <div class="swiper-slide"><img class="puppy" src="./assets/public/images/puppy-6.png" alt=""></div>
+        <div class="swiper-slide"><img class="puppy" src="./assets/public/images/puppy-7.png" alt=""></div>
+        <div class="swiper-slide"><img class="puppy" src="./assets/public/images/puppy-8.png" alt=""></div>
+      </div>
+    </div>
+  </div>
   <div class="frame swiper swiper-main">
     <div class="swiper-wrapper">
       <div class="swiper-slide">
@@ -227,7 +239,10 @@
     <img class="frame-img" src="./assets/public/images/love-you.png" alt="" />
   </div>
   <div class="frame fourth">
-    <img src="./assets/public/images/happy.gif" alt="" />
+    <a style="z-index: 100; -webkit-tap-highlight-color: transparent; " href="./assets/public/gift.pdf"
+      download="Love You">
+      <img src="./assets/public/images/happy.gif" alt="" />
+    </a>
   </div>
   <audio class="audio" src="./assets/public/audio/ambient.mp3" loop></audio>
 </body>

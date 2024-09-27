@@ -63,6 +63,11 @@ html.lenis body {
 }
 
 .dark {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 25svh 0 0 0;
   background-color: #000;
   height: 100svh;
   box-shadow: rgba(255, 218, 217, 0.35) 0px -50px 36px -28px inset;
@@ -89,6 +94,43 @@ html.lenis body {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.frame-title {
+  font-family: raleway_c;
+  font-weight: 300;
+  font-size: calc(var(--index) * 3.5);
+  text-align: center;
+  text-wrap: wrap;
+  line-height: calc(var(--index) * 4);
+  letter-spacing: calc(var(--index) * 0.3);
+  width: 100%;
+  margin: 0;
+  padding: 0 calc(var(--index) * 2.5);
+  color: #ffffff;
+  z-index: 1;
+}
+
+.frame-subtitle {
+  font-family: raleway_c;
+  font-weight: 100;
+  font-size: calc(var(--index) * 1);
+  text-align: center;
+  text-wrap: wrap;
+  letter-spacing: calc(var(--index) * 0.15);
+  width: 100%;
+  margin: 0;
+  padding: 0 calc(var(--index) * 2.5);
+  color: #ffffff;
+  z-index: 1;
+}
+
+.puppy {
+  width: calc(var(--index) * 10);
+  height: calc(var(--index) * 10);
+  object-fit: cover;
+  filter: drop-shadow(0 0 4px #000);
+  z-index: 1;
 }
 
 .frame-media {

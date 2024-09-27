@@ -4,7 +4,16 @@ import { Autoplay, EffectFade } from "swiper/modules";
 const play = document.body.querySelector("#play");
 const play_icon = document.body.querySelector(".bx-pause-circle");
 
-const swiper = new Swiper(".swiper-main", {
+const swiper_puppies = new Swiper(".swiper-puppies", {
+  modules: [Autoplay],
+  direction: "vertical",
+  loop: true,
+  autoplay: {
+    delay: 1500,
+  },
+});
+
+const swiper_main = new Swiper(".swiper-main", {
   modules: [Autoplay],
   direction: "horizontal",
   loop: true,
@@ -19,7 +28,6 @@ export const swiper_modal = new Swiper(".swiper-modal", {
     delay: 2000,
   },
   loop: true,
-  
   effect: "fade",
   fadeEffect: {
     crossFade: true,
@@ -33,8 +41,8 @@ play.addEventListener("click", () => {
   play_icon.classList.toggle("bx-pause-circle");
 
   if (play_icon.classList.contains("bx-pause-circle")) {
-    swiper.autoplay.start();
+    swiper_main.autoplay.start();
   } else {
-    swiper.autoplay.stop();
+    swiper_main.autoplay.stop();
   }
 });
